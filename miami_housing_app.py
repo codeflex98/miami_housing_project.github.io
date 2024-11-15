@@ -27,8 +27,13 @@ def main():
     p13 = st.number_input("avno60plus")
     p14 = st.number_input("month_sold")
     p15 = st.number_input("structure_quality")
-    p16 = st.text_input("are you willing to buy thiss?????")
-
+    
+    st.title("are you willing to buy thiss?????")
+    s1 = st.selectbox('choose',('YES', 'NO'))
+    if s1 =='YES':
+        p2 = 1
+    else:
+        p2 = 0
 
     # Debugging statements
     print(f"Inputs: {p1}, {p2}, {p3}, {p4}, {p5}, {p6}, {p7}, {p8}, {p9}, {p10}, {p11}, {p12} {p13}, {p14}, {p15}")
