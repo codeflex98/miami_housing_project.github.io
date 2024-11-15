@@ -12,7 +12,7 @@ def main():
     p1 = st.number_input("LATITUDE")
     p2 = st.number_input('LONGITUDE')
 
-    p3 = st.number_input("LND_SQFOOT")
+    p3 = st.number_input(LND_SQFOOT)
     p4 = st.number_input("TOT_LVG_AREA")
     p5 = st.number_input("SPEC_FEAT_VAL")
 
