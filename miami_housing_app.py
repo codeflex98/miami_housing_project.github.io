@@ -27,6 +27,7 @@ def main():
     p13 = st.number_input("avno60plus")
     p14 = st.number_input("month_sold")
     p15 = st.number_input("structure_quality")
+    p16 = st.text_input("are you willing to buy thiss?????")
 
 
     # Debugging statements
@@ -35,7 +36,7 @@ def main():
     print(f"Input data shape: {input_data.shape}")
 
     # Example result (replace with your prediction logic)
-    if st.button("Awsome Price"):
+    if st.button("Predict Price"):
         try:
             prediction = model.predict(input_data)
             st.balloons()
