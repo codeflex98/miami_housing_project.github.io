@@ -37,7 +37,7 @@ def main():
     if st.button("Predict Price"):
         try:
             prediction = model.predict(input_data)
-            st.audio()
+            st.toast()
             st.success(f"Best Price for your home {round(prediction[0], 2)} US Dollars")
         except Exception as e:
             st.error(f"Error in prediction: {e}")
