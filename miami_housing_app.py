@@ -9,8 +9,8 @@ model = joblib.load(model_path)
 def main():
     st.title("Miami Housing Prediction by Manvanth")
 
-    p1 = st.number_input("LATITUDE")
-    p2 = st.number_input("LONGITUDE")
+    p1 = st.number_input("LATITUDE",min_value=-90.0, max_value=90.0)
+    p2 = st.number_input('LONGITUDE',min_value=-180.0, max_value=180.0)
 
     p3 = st.number_input("LND_SQFOOT")
     p4 = st.number_input("TOT_LVG_AREA")
